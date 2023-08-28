@@ -1,0 +1,8 @@
+create or replace TABLE STUDIES (
+	ID NUMBER(38,0) NOT NULL,
+	CUSTOMER_ID NUMBER(38,0),
+	BRIEF_TITLE VARCHAR,
+	NCT_NUMBER VARCHAR,
+	primary key (ID),
+	foreign key (CUSTOMER_ID) referencesCUSTOMERS(ID)
+);
